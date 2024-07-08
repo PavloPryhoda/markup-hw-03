@@ -16,6 +16,10 @@
 body {
 font-family: "Roboto", "sans-serif";
 }
+
+.container {
+    width: 1600px;
+}
 /* -----------------------------------HEADER----------------------------------- */
 .header-logo {
     font-size: 26px;
