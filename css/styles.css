@@ -18,7 +18,7 @@ font-family: "Roboto", "sans-serif";
 }
 
 .container {
-    width: 1600px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -127,13 +127,22 @@ font-family: "Roboto", "sans-serif";
 }
 /* -----------------------------------HERO----------------------------------- */
 
+.hero {
+    padding: 200px 0;
+    background-color:#2F303A;
+}
+
 .hero-text {
-    font-size: 44px;
+    font-size: 44px;    
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #212121;
+    color: #ffffff;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 696px;
 }
 
 .hero-button {
@@ -155,9 +164,13 @@ font-family: "Roboto", "sans-serif";
 
     padding: 10px 32px;
 
+    margin: 0 auto;
+    display: block;
+
 
 }
 /* -----------------------------------CONTENT----------------------------------- */
+
 
 .visually-hidden {
     position: absolute;
@@ -172,6 +185,22 @@ font-family: "Roboto", "sans-serif";
     overflow: hidden;
 }
 
+.content {
+    padding: 94px 0;
+}
+
+.content-list {
+    display: flex;
+}
+
+.content-list :not(:last-child) {
+    margin-right: 30px;
+}
+
+.content-item {
+    width: 270px;
+}
+
 .content-text {
     font-size: 14px;
     font-weight: 700;
@@ -179,6 +208,8 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--text-color);
+
+    margin-bottom: 10px;
 }
 
 .content-title {
@@ -191,6 +222,10 @@ font-family: "Roboto", "sans-serif";
 }
 /* -----------------------------------ABOUT----------------------------------- */
 
+.about {
+    padding-bottom: 94px;
+}
+
 .about-text {
     font-size: 36px;
     font-weight: 700;
@@ -198,9 +233,24 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-color);
+
+    margin-bottom: 50px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-list :not(:last-child) {
+    margin-right: 30px;
 }
 
 /* -----------------------------------TEAM----------------------------------- */
+
+.team {
+    padding: 94px 0;
+    background-color: #F5F4FA;
+}
 
 .team-text {
     font-size: 36px;
@@ -209,7 +259,17 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-color);
+
+    margin-bottom: 50px;
 }
+
+.team-list {
+    display: flex;
+}
+
+/* .team-list:not(:last-child) {
+    margin-right: 30px;
+} */
 
 .team-item {
     width: 270px;
@@ -218,6 +278,14 @@ font-family: "Roboto", "sans-serif";
     left: 515px;
     gap: 0px;
     opacity: 0px;
+
+    background-color: #ffffff;
+
+    margin-right: 30px;
+}
+
+.team-item:last-child {
+    margin-right: 0;
 }
 
 .team-title {
