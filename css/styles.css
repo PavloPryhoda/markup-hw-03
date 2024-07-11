@@ -274,11 +274,8 @@ font-family: "Roboto", "sans-serif";
 .team-item {
     width: 270px;
     height: 368px;
-    top: 1632px;
-    left: 515px;
     gap: 0px;
     opacity: 0px;
-
     background-color: #ffffff;
 
     margin-right: 30px;
@@ -295,6 +292,9 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-color);
+    
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-after-title {
@@ -304,11 +304,13 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-color);
+
 }
 
 /* -----------------------------------FOOTER----------------------------------- */
 .footer{
     background-color:#2F303A;
+    padding: 60px 0;
 }
 
 .footer-logo {
@@ -319,6 +321,9 @@ font-family: "Roboto", "sans-serif";
     letter-spacing: 0.03em;
     text-align: left;
     color: #ffffff;
+    
+    display: block;
+    margin-bottom: 20px;
 }
 
 .footer-pre-logo {
@@ -331,6 +336,10 @@ font-family: "Roboto", "sans-serif";
     color: var(--accent-color);
 }
 
+.footer-list :not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .footer-nav {
     font-size: 14px;
     font-weight: 400;
@@ -339,6 +348,7 @@ font-family: "Roboto", "sans-serif";
     text-align: left;
     color: #ffffff;
 }
+
 .footer-nav:hover,
 .footer-nav:focus {
     color: var(--accent-color);
@@ -377,7 +387,22 @@ address {
 
 /* -----------------------------------PORTFOLIO----------------------------------- */
 
+.item-box {
+    padding-bottom: 94px;
+}
+
 .list-btn {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 94px;
+}
+
+.list-btn :not(:last-child) {
+    margin-right: 8px;
+}
+
+.item-btn {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -385,12 +410,36 @@ address {
     text-align: center;
     color: var(--text-color);
     cursor: pointer;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+
+    padding: 6px 22px;
+
+    margin-bottom: 50px;
 }
-.list-btn:hover,
-.list-btn:focus {
+.item-btn:hover,
+.item-btn:focus {
     background-color: var(--accent-color);
     color:#F5F4FA;
 
+}
+
+.section-item-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.section-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.section-item:nth-last-child(-n +3) {
+    margin-bottom: 0;
 }
 
 .section-text {
@@ -400,6 +449,10 @@ address {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--text-color);
+
+    margin-top: 20px;
+
+    padding: 0 24px;
 }
 
 .section-title {
@@ -409,4 +462,8 @@ address {
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--title-color);
+
+    margin-top: 4px;
+
+    padding: 0 24px;
 }
