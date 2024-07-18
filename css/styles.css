@@ -229,6 +229,10 @@ font-family: "Roboto", "sans-serif";
     padding-bottom: 94px;
 }
 
+.about-images {
+    display: block;
+}
+
 .about-text {
     font-size: 36px;
     font-weight: 700;
@@ -286,6 +290,10 @@ font-family: "Roboto", "sans-serif";
 
 .team-item:last-child {
     margin-right: 0;
+}
+
+.team-images {
+    display: block;
 }
 
 .team-title {
@@ -443,6 +451,10 @@ address {
     /* border: 1px solid #eeeeee; */
 
     /* outline: 1px solid #eeeeee; */
+}
+
+.item-images {
+    display: block;
 }
 
 .item-text {
